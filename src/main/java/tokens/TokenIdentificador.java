@@ -59,7 +59,6 @@ public class TokenIdentificador {
         }
         if (estadoActual == 1) {
             AlmacenadorInfo.agregarInformacion("Identificador", palabra, linea, columna);
-            System.out.println("Token agregado");
         } else {
             if (posicionPalabra > 0) {
                 AlmacenadorInfo.agregarInformacion("Error", palabra, linea, columna+posicionPalabra);
